@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    * {
+        box-sizing: border-box;
+    } 
+
+    body {
+        margin: 0%;
+    }
+  
+    #showcase {
+        background: url(home-bg2.jpeg) ;
+        background-position: center;
+        height: 600px;
+        width: 100%;
+        padding: 10px;
+    }     
+
+    .main-header {
+        background-color:#FC997C;
+        padding: 9px 16px;
+    }
+
+    #how-it-works 
+    {background-color: #FC997C;  
+     padding: 10px   
+    }
+
+    .main-nav {
+     display: inline-block;
+     width:calc(95% - 90px);                      
+     text-align: right;
+    }
+    .main-nav__items {
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+    }
+
+    .main-nav__item {
+        display: inline-block;
+        margin: 0 8px;
+        text-decoration: none;
+    }
+
+    .main-header__logo{
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    .main-nav__item a:hover,.main-nav__item a:hover::before  {      
+        color: #2E4C6D;
+    }
+ 
+    .main-nav__item a:active::before {      
+        color: #fff;
+    }
+
+    .main-nav__item a,.main-nav__item a:active {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .main-nav__item::before {
+        content: '\2022' ;
+        color: #fff;
+    }
+
+    .main-nav__item--login a {
+        color: #fff;
+        background-color: #2E4C6D;
+        padding: 4px 16px;
+        border-radius: 8px;border: 2px solid #fff;
+    }
+
+    .main-nav__item--login::before {
+       color: #2E4C6D;
+      border: 2px solid #2E4C6D;
+      background-color: #fff;
+    }
+
+    .main-nav__item--login::before {
+        content: none ;
+    }
+
+        
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Filmler</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Diziler</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>           
+        </nav>
+    </header>
+
+
+
+<main>
+    <section id="showcase">
+    <h1>Welcome to MovieApp</h1>
+    </section>
+    <section id="how-it-works">
+    <h2>How it works?</h2>
+    </section>
+</main>
+  
+
+</body>
+</html>
